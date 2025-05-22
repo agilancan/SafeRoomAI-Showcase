@@ -1,0 +1,111 @@
+/* src/App.css */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007bff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #0d6efd;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.toggle-btn {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: opacity 0.3s;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+}
+
+.home-screen {
+  text-align: center;
+}
+
+.video-container {
+  margin-top: 1rem;
+}
+
+.video-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  color: var(--text-color);
+}
+
+.notfound-icon {
+  font-size: 5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-back:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+body.dark-mode .footer {
+  border-color: rgba(255,255,255,0.2);
+}
