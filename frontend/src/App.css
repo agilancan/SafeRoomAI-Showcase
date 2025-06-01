@@ -109,3 +109,226 @@ main {
 body.dark-mode .footer {
   border-color: rgba(255,255,255,0.2);
 }
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+body.dark-mode .nav-bar {
+  background-color: var(--bg-color);
+  border-color: rgba(255,255,255,0.2);
+}
+body.dark-mode .nav-link:hover {
+  color: var(--accent-color);
+}
+
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto‐fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-timestamp {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+body.dark-mode .activity-timestamp {
+  color: var(--text-color);
+}
+
+.analytics-screen h3 {
+  text-align: center;
+}
+
+.chart-container {
+  margin: 2rem 0;
+}
+
+.chart-container h3 {
+  margin-bottom: 1rem;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* Activity Feed Enhancements */
+.activity-feed {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.activity-feed h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.error-text {
+  color: #cc0000;
+  font-weight: 500;
+}
+
+/* grid container: center, gap, responsive */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-items: center;
+}
+
+/* each “card” */
+.activity-item {
+  background-color: var(--bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 220px;
+}
+
+.activity-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activity-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover; /* crops if necessary, preserves aspect ratio */
+  display: block;
+}
+
+.activity-timestamp {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* If dark mode, slightly adjust border color */
+body.dark-mode .activity-item {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .activity-item:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .activity-timestamp {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* Reusable “card” style for charts/videos */
+.card {
+  background-color: var(--bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styles */
+.analytics-screen h2,
+.home-screen h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Error message */
+.error-text {
+  color: #cc0000;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Chart container (already wrapped in .card) */
+.chart-container {
+  margin-top: 1rem;
+}
+
+/* Center and constrain width */
+.analytics-screen,
+.home-screen {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Style for the live-stream image */
+.video-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Adjust dark-mode shadows/borders */
+body.dark-mode .card {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────── */

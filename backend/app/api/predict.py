@@ -1,7 +1,7 @@
 # backend/app/api/predict.py
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
-from app.services.yolo_services import MotionYoloProcessor  # or yolo_service, whichever you chose
+from backend.app.services.inference_service import MotionYoloProcessor  
 
 router = APIRouter()
 processor = MotionYoloProcessor(model_path="models/yolov8n.pt", source=0)

@@ -6,8 +6,12 @@ export default function HomeScreen() {
   return (
     <div className="home-screen">
       <h2>Live Feed</h2>
-      <div className="video-container">
-        <img src="/predict/video" alt="Live MJPEG Stream" />
+
+      <div className="card video-card">
+        <img
+          src="/predict/video"
+          alt="Live MJPEG Stream"
+        />
       </div>
     </div>
   );
