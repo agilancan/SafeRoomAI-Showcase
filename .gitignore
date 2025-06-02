@@ -3,9 +3,41 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
- 
+env/
+
 # macOS
 .DS_Store
- 
+
 # VS Code
 .vscode/
+
+backend/scripts/
+
+# Anomaly screenshots directory
+data/anomaly_screenshots/
+
+# Models and large data files
+models/
+*.h5
+*.npz
+data/normal_features.npy
+data/val_recon_errors.npy
+
+# Frontend (React)
+node_modules/
+build/
+dist/
+*.cache/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+.env*
+package-lock.json
+yarn.lock
+frontend/node_modules/
+
+
+# Miscellaneous
+logs/
+*.log
+Thumbs.db

@@ -1,0 +1,28 @@
+# ── docker-compose.yml ──────────────────────────────────────────────
+services:
+
+  backend:
+    build:
+      context: .                        # <-- repo root
+      dockerfile: ./backend/Dockerfile
+    container_name: saferoom-backend
+    restart: unless-stopped
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/data/anomaly_screenshots:/app/data/anomaly_screenshots
+      - ./backend/models:/app/models
+    ports:
+      - "8000:8000"
+    environment:
+      TZ: UTC
+
+  frontend:
+    build:
+      context: ./frontend               # <-- only build React here
+      dockerfile: Dockerfile
+    container_name: saferoom-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
