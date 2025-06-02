@@ -11,7 +11,7 @@ env/
 # VS Code
 .vscode/
 
-backend/scripts/
+#backend/scripts/
 
 # Anomaly screenshots directory
 data/anomaly_screenshots/
