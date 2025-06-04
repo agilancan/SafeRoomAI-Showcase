@@ -1,0 +1,10 @@
+# backend/requirements.txt
+fastapi
+uvicorn[standard]
+opencv-python-headless
+ultralytics
+numpy
+tensorflow
+mediapipe
+scikit-learn
+aiofiles
