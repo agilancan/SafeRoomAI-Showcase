@@ -1,32 +1,10 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-=======
 // src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DarkModeToggle from './components/DarkModeToggle';
 import NavBar from './components/NavBar';
 import HomeScreen from './screens/HomeScreen';
+import Dashboard from './pages/dashboard'; // Import from pages folder
 import ActivityFeed from './screens/ActivityFeed';
 import Analytics from './screens/Analytics';
 import NotFound from './components/NotFound';
@@ -60,6 +38,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/activity" element={<ActivityFeed />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="*" element={<NotFound />} />
@@ -69,7 +48,6 @@ function App() {
         <Footer />
       </div>
     </Router>
->>>>>>> 853ce1311d72981a9a797eec50399e3183e5f643
   );
 }
 
