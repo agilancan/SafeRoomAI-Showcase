@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DarkModeToggle from './components/DarkModeToggle';
 import NavBar from './components/NavBar';
 import HomeScreen from './screens/HomeScreen';
-import Dashboard from './pages/dashboard'; // Import from pages folder
+
 import ActivityFeed from './screens/ActivityFeed';
 import Analytics from './screens/Analytics';
 import NotFound from './components/NotFound';
@@ -38,7 +38,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomeScreen />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Analytics />} />
             <Route path="/activity" element={<ActivityFeed />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="*" element={<NotFound />} />
