@@ -1,10 +1,14 @@
 // src/screens/Analytics.jsx
+
 import React, { useState, useEffect } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer,
   BarChart, Bar
 } from 'recharts';
 import '../App.css';
+import AnomalyChart from '../components/anomalychart';
+import AnomalyHeatmap from '../components/anomalyheatmap';
+import AnomalySnapshots from '../components/anomalysnapshots';
 
 export default function Analytics() {
   const [summary, setSummary] = useState([]);
@@ -85,6 +89,25 @@ export default function Analytics() {
           </BarChart>
         </ResponsiveContainer>
       </div>
+    
+    {/* ──── Security Anomaly Chart ─────────────────────────────────────── */}
+      <div className="card chart-container">
+        <h3>Security Anomaly Chart</h3>
+        <AnomalyChart />
+      </div>
+
+      {/* ──── Activity Heatmap ───────────────────────────────────────────── */}
+      <div className="card chart-container">
+        <h3>Activity Heatmap</h3>
+        <AnomalyHeatmap />
+      </div>
+
+      {/* ──── Snapshot of Anomalies ──────────────────────────────────────── */}
+      <div className="card chart-container">
+        <h3>Snapshot of Anomalies</h3>
+        <AnomalySnapshots />
+      </div>
     </div>
   );
 }
+
