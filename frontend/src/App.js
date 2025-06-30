@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import { lightTheme, darkTheme } from './theme/theme';
-import DarkModeToggle from './components/DarkModeToggle';
 import NavBar from './components/NavBar';
 import HomeScreen from './screens/HomeScreen';
 
@@ -37,7 +36,6 @@ function App() {
           <Box component="main" sx={{ flexGrow: 1, p: 3, mt: 2 }}>
             <Routes>
               <Route path="/" element={<HomeScreen />} />
-              <Route path="/dashboard" element={<Analytics />} />
               <Route path="/activity" element={<ActivityFeed />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="*" element={<NotFound />} />
