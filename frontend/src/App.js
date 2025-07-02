@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import { lightTheme, darkTheme } from './theme/theme';
-import DarkModeToggle from './components/DarkModeToggle';
 import NavBar from './components/NavBar';
 import HomeScreen from './screens/HomeScreen';
+
 import ActivityFeed from './screens/ActivityFeed';
 import Analytics from './screens/Analytics';
 import NotFound from './components/NotFound';
