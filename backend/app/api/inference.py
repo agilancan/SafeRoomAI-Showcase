@@ -10,7 +10,7 @@ router = APIRouter()
 service = InferenceService(
     yolo_model_path="models/yolov8n.pt",
     autoencoder_path="models/autoencoder.h5",
-    anomaly_threshold=0.08220931328833105,
+    anomaly_threshold=0.09952242262661457,
     camera_index=0,
 )
 
@@ -113,3 +113,12 @@ def analytics_errors():
     logs = service.pop_logs()
     errors = [entry.get("recon_error", 0.0) for entry in logs]
     return JSONResponse(content=errors)
+
+# DB access for /users route
+from sqlalchemy.orm import Session
+from fastapi import Depends
+from app.database import get_db
+
+@router.get("/users", summary="Fetch all users from RDS database")
+def read_users(db: Session = Depends(get_db)):
+    return db.execute("SELECT * FROM users").fetchall()
