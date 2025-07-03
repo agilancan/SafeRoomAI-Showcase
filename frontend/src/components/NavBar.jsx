@@ -17,7 +17,7 @@ import {
   Analytics
 } from '@mui/icons-material';
 import DarkModeToggle from './DarkModeToggle';
-import logo from '../logo.png';
+import logo from './logo.png';
 
 export default function NavBar({ darkMode, onToggleDarkMode }) {
   const location = useLocation();
