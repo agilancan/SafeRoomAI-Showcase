@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="20250616_2103_AI Chip Security_remix_01jxxpgbsffavvnn188m0b1fkd.png" alt="Logo" width="600"/>
+</p>
+
 # SafeRoomAI-Showcase 🛡️📹
 
 **A smart surveillance and workplace behavior analytics platform.**
