@@ -17,25 +17,25 @@ This repository is a **curated portfolio showcase** of my contributions to *Safe
 **SafeRoomAI** is a modular, API-first platform that transforms raw surveillance video into structured, actionable intelligence in real time. It supports:
 
 - **Motion and object detection** (e.g., detecting people, vehicles)
-<p align="center">
+  <p align="center">
   <img src="assets/TestingThreshold.png" alt="Logo" width="600"/>
-</p>
+  </p>
 - **Facial recognition and action classification** (e.g., loitering, entering restricted areas)
-<p align="center">
+  <p align="center">
   <img src="assets/image (6).png" alt="Logo" width="600"/>
-</p>
+  </p>
 - **Anomaly detection** (e.g., off-hour entry, irregular behavior)
-<p align="center">
+  <p align="center">
   <img src="assets/Screenshot 2025-06-10 163358.png" alt="Logo" width="600"/>
-</p>
+  </p>
 - **Activity feed interface** for real-time incident monitoring
-<p align="center">
+  <p align="center">
   <img src="assets/Screenshot 2025-07-16 185827.png" alt="Logo" width="600"/>
-</p>
+  </p>
 - **Analytics dashboard** for space usage and staff behavior patterns
-<p align="center">
+  <p align="center">
   <img src="assets/Screenshot 2025-07-16 185648.png" alt="Logo" width="600"/>
-</p>
+  </p>
 
 ---
 
@@ -50,9 +50,9 @@ I served as the **Product Manager**, **Computer Vision Lead**, and **Data/Backen
   - PostgreSQL and AWS RDS for activity logging and metadata
 - Developed **ETL pipelines** for video preprocessing, annotation, and storage
 - Contributed to the **agentic AI module**, building toward autonomous insight extraction
-<p align="center">
+  <p align="center">
   <img src="assets/sa2.PNG" alt="Logo" width="600"/>
-</p>
+  </p>
 ---
 
 ## 🧠 Core AI Features
