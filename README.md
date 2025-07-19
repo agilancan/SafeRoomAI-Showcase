@@ -30,11 +30,11 @@ This repository is a **curated portfolio showcase** of my contributions to *Safe
 </p>
 - **Activity feed interface** for real-time incident monitoring
 <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="600"/>
+  <img src="assets/Screenshot 2025-07-16 185827.png" alt="Logo" width="600"/>
 </p>
 - **Analytics dashboard** for space usage and staff behavior patterns
 <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="600"/>
+  <img src="assets/Screenshot 2025-07-16 185648.png" alt="Logo" width="600"/>
 </p>
 
 ---
@@ -51,7 +51,7 @@ I served as the **Product Manager**, **Computer Vision Lead**, and **Data/Backen
 - Developed **ETL pipelines** for video preprocessing, annotation, and storage
 - Contributed to the **agentic AI module**, building toward autonomous insight extraction
 <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="200"/>
+  <img src="assets/sa2.PNG" alt="Logo" width="600"/>
 </p>
 ---
 
