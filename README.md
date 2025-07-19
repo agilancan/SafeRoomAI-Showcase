@@ -18,15 +18,15 @@ This repository is a **curated portfolio showcase** of my contributions to *Safe
 
 - **Motion and object detection** (e.g., detecting people, vehicles)
 - <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="200"/>
+  <img src="assets/TestingThreshold.png" alt="Logo" width="200"/>
 </p>
 - **Facial recognition and action classification** (e.g., loitering, entering restricted areas)
 <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="200"/>
+  <img src="assets/image (6).png" alt="Logo" width="200"/>
 </p>
 - **Anomaly detection** (e.g., off-hour entry, irregular behavior)
 <p align="center">
-  <img src="assets/sa2.PNG" alt="Logo" width="200"/>
+  <img src="assets/Screenshot 2025-06-10 163358.png" alt="Logo" width="200"/>
 </p>
 - **Activity feed interface** for real-time incident monitoring
 <p align="center">
