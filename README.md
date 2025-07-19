@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/20250616_2103_AI Chip Security_remix_01jxxpgbsffavvnn188m0b1fkd.png" alt="Logo" width="600"/>
+  <img src="assets/20250703_0945_Transparent Background Request_remix_01jz88dtfnf6tr7dqgf8ehpdcn.png" alt="Logo" width="200"/>
 </p>
 
 # SafeRoomAI-Showcase 🛡️📹
